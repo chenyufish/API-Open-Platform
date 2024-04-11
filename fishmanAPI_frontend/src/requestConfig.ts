@@ -1,5 +1,6 @@
 ﻿import type { RequestOptions } from '@@/plugin-request/request';
 import type { RequestConfig } from '@umijs/max';
+// @ts-ignore
 import { message, notification } from 'antd';
 
 // 错误处理方案： 错误类型
@@ -25,6 +26,8 @@ interface ResponseStructure {
  * @doc https://umijs.org/docs/max/request#配置
  */
 export const requestConfig: RequestConfig = {
+  baseURL:'http://localhost:7529',
+  withCredentials:true,
   // 错误处理： umi@3 的错误处理方案。
   errorConfig: {
     // 错误抛出
