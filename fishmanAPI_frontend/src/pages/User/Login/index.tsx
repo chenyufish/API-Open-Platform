@@ -9,6 +9,7 @@ import {
   UserOutlined,
   WeiboCircleOutlined,
 } from '@ant-design/icons';
+// @ts-ignore
 import {
   LoginForm,
   ProFormCaptcha,
@@ -16,6 +17,7 @@ import {
   ProFormText,
 } from '@ant-design/pro-components';
 import { Helmet, history, useModel } from '@umijs/max';
+// @ts-ignore
 import { Alert, Tabs, message } from 'antd';
 import { createStyles } from 'antd-style';
 import React, { useState } from 'react';
