@@ -9,6 +9,7 @@ import React, { useCallback } from 'react';
 import { flushSync } from 'react-dom';
 import HeaderDropdown from '../HeaderDropdown';
 import {userLogoutUsingPost} from "@/services/fishmanAPI_backend/userController";
+import {loginUser} from "@/services/swagger/user";
 
 export type GlobalHeaderRightProps = {
   menu?: boolean;
@@ -17,8 +18,8 @@ export type GlobalHeaderRightProps = {
 
 export const AvatarName = () => {
   const { initialState } = useModel('@@initialState');
-  const { currentUser } = initialState || {};
-  return <span className="anticon">{currentUser?.name}</span>;
+  const { loginUser } = initialState || {};
+  return <span className="anticon">{loginUser?.userName}</span>;
 };
 
 const useStyles = createStyles(({ token }) => {
@@ -44,7 +45,7 @@ export const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu, childre
    * 退出登录，并且将当前的 url 保存
    */
   const loginOut = async () => {
-    await outLogin();
+    await userLogoutUsingPost();
     const { search, pathname } = window.location;
     const urlParams = new URL(window.location.href).searchParams;
     /** 此方法会跳转到 redirect 参数所在的位置 */
@@ -68,9 +69,9 @@ export const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu, childre
       const { key } = event;
       if (key === 'logout') {
         flushSync(() => {
-          setInitialState((s) => ({ ...s, currentUser: undefined }));
+          setInitialState((s) => ({ ...s, loginUser: undefined }));
         });
-        userLogoutUsingPost();
+          userLogoutUsingPost();
         return;
       }
       history.push(`/account/${key}`);
@@ -94,9 +95,9 @@ export const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu, childre
     return loading;
   }
 
-  const { currentUser } = initialState;
+  const { loginUser } = initialState;
 
-  if (!currentUser || !currentUser.name) {
+  if (!loginUser || !loginUser.userName) {
     return loading;
   }
 
