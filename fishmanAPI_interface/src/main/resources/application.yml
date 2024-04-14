@@ -2,4 +2,8 @@ server:
   port: 8123
   servlet:
     context-path: /api
+fishman:
+  client:
+    access-key: fishman
+    secret-key: abcdefgh
 
