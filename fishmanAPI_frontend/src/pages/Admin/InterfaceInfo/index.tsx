@@ -16,8 +16,8 @@ import {
   listInterfaceInfoByPageUsingGet,
   updateInterfaceInfoUsingPost
 } from '@/services/fishmanAPI_backend/interfaceInfoController';
-import CreateModal from '@/pages/InterfaceInfo/components/CreateModal';
-import UpdateModal from "@/pages/InterfaceInfo/components/UpdateModal";
+import CreateModal from '@/pages/Admin/InterfaceInfo/components/CreateModal';
+import UpdateModal from "@/pages/Admin/InterfaceInfo/components/UpdateModal";
 
 const TableList: React.FC = () => {
   /**

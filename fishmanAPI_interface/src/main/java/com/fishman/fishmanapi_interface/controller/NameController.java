@@ -29,7 +29,7 @@ public class NameController {
     public String getUsernameByPost(@RequestBody User user, HttpServletRequest request) {
         String accessKey = request.getHeader("accessKey");
         String nonce = request.getHeader("nonce");
-//        String timestamp = request.getHeader("timestamp");
+        String timestamp = request.getHeader("timestamp");
         String sign = request.getHeader("sign");
         String body = request.getHeader("body");
         // todo 实际情况应该是去数据库中查是否已分配给用户

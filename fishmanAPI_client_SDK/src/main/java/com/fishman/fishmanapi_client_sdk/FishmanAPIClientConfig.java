@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties("fishman.client")
 @Data
 @ComponentScan
-public class fishmanAPIClientConfig {
+public class FishmanAPIClientConfig {
 
     private String accessKey;
 
