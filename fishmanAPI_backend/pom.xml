@@ -32,6 +32,12 @@
             <version>2.2.2</version>
         </dependency>
         <dependency>
+            <groupId>com.fishman</groupId>
+            <artifactId>fishmanAPI_client_SDK</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
             <version>3.0.9</version>

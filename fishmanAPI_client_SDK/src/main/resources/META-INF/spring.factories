@@ -1,0 +1,2 @@
+# spring boot starter
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.fishman.fishmanapi_client_sdk.FishmanAPIClientConfig
