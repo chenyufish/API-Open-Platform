@@ -268,6 +268,8 @@ mvn install 打包为本地项目
 2. 在调用前可以做一些校验
 3. 平台后端去调用模拟接口
 
+![image-20240416222231707](C:\Users\fishman\AppData\Roaming\Typora\typora-user-images\image-20240416222231707.png)
+
 ## TODO
 
 - 判断该接口是否可以调用时有固定方法名改为根据测试地址来调用

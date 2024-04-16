@@ -1,6 +1,7 @@
 package com.yupi.project.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
+import javafx.scene.text.Text;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -74,6 +75,7 @@ public class User implements Serializable {
      */
     @TableLogic
     private Integer isDelete;
+
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

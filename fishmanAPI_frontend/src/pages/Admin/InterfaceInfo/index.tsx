@@ -10,14 +10,16 @@ import '@umijs/max';
 import { Button, Drawer, message } from 'antd';
 import React, { useRef, useState } from 'react';
 import type { SortOrder } from 'antd/es/table/interface';
+import CreateModal from '@/pages/Admin/InterfaceInfo/components/CreateModal';
+import UpdateModal from "@/pages/Admin/InterfaceInfo/components/UpdateModal";
 import {
   addInterfaceInfoUsingPost,
   deleteInterfaceInfoUsingPost,
   listInterfaceInfoByPageUsingGet,
+  offlineInterfaceInfoUsingPost,
+  onlineInterfaceInfoUsingPost,
   updateInterfaceInfoUsingPost
-} from '@/services/fishmanAPI_backend/interfaceInfoController';
-import CreateModal from '@/pages/Admin/InterfaceInfo/components/CreateModal';
-import UpdateModal from "@/pages/Admin/InterfaceInfo/components/UpdateModal";
+} from "@/services/fishmanAPI_backend/interfaceInfoController";
 
 const TableList: React.FC = () => {
   /**
