@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class InterfaceInfoInvokeRequest implements Serializable {
 
     /**
-     * 主键
+     * 用户ID
      */
     private Long id;
 
