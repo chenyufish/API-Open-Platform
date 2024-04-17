@@ -467,8 +467,6 @@ https://docs.spring.io/spring-cloud-gateway/docs/current/reference/html/#the-add
 3. Web Handler： 处理请求（一层层经过过滤器）
 4. 实际调用服务
 
-![image-20221204202459676](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20221204202459676.png)
-
 ### 两种配置方式
 
 1. 配置式（方便、规范）
