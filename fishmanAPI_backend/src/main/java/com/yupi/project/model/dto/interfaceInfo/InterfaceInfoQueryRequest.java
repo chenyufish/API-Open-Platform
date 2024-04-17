@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Data
 public class InterfaceInfoQueryRequest extends PageRequest implements Serializable {
 
-    @TableId(type = IdType.AUTO)
+
     private Long id;
 
     /**
