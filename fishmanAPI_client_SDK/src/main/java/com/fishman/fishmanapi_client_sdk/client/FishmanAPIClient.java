@@ -20,7 +20,7 @@ import static com.fishman.fishmanapi_client_sdk.utils.SignUtils.genSign;
  */
 public class FishmanAPIClient {
 
-    private static final String GATEWAY_HOST = "http://localhost:7777";
+    private static final String GATEWAY_HOST = "http://localhost:8090";
 
     private String accessKey;
 
