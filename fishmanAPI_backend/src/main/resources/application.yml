@@ -1,6 +1,9 @@
+# 公共配置文件
+# @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+# @from <a href="https://yupi.icu">编程导航知识星球</a>
 spring:
   application:
-    name: springboot-init
+    name: fishmanAPI_backend
   # DataSource Config
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -8,7 +11,7 @@ spring:
     username: root
     password: 030610CHENyu
   mvc:
-    path match:
+    pathmatch:
       matching-strategy: ANT_PATH_MATCHER
   # session 失效时间（分钟）
   session:
@@ -18,7 +21,7 @@ spring:
   redis:
     port: 6379
     host: localhost
-    database: 1
+    database: 0
 server:
   port: 7777
   servlet:
@@ -32,8 +35,17 @@ mybatis-plus:
       logic-delete-field: isDelete # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
       logic-delete-value: 1 # 逻辑已删除值(默认为 1)
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+# 这段配置仅供测试，实际应该根据登录用户获取对应的 ak、sk
 fishman:
   client:
     access-key: fishman
     secret-key: abcdefgh
-
+dubbo:
+  application:
+    name: dubbo-springboot-demo-provider
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848

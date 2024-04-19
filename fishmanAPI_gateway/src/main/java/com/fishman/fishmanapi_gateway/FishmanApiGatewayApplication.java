@@ -1,6 +1,5 @@
 package com.fishman.fishmanapi_gateway;
-
-import com.fishman.provider.DemoService;
+import com.fishman.project.provider.DemoService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +9,6 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerA
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Service;
-
 /**
  * 网关入口
  *
@@ -22,10 +20,8 @@ import org.springframework.stereotype.Service;
 @EnableDubbo
 @Service
 public class FishmanApiGatewayApplication {
-
     @DubboReference
     private DemoService demoService;
-
 
     public static void main(String[] args) {
 
@@ -36,7 +32,6 @@ public class FishmanApiGatewayApplication {
         System.out.println("result: " + result);
         System.out.println("result: " + result2);
     }
-
     public String doSayHello(String name) {
         return demoService.sayHello(name);
     }

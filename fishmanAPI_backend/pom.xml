@@ -18,6 +18,26 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <!--dubbo -->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>3.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <!-- Introduce Dubbo Nacos extension, or you can add Nacos dependency directly as shown above-->
+        <!--
+           <dependency>
+               <groupId>org.apache.dubbo</groupId>
+               <artifactId>dubbo-registry-nacos</artifactId>
+               <version>3.0.9</version>
+           </dependency>
+        -->
+        <!--spring boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -31,16 +51,13 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.2.2</version>
         </dependency>
+        <!--个人SDK -->
         <dependency>
             <groupId>com.fishman</groupId>
             <artifactId>fishmanAPI_client_SDK</artifactId>
             <version>0.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
-            <version>3.0.9</version>
-        </dependency>
+        <!--mybatis -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -54,7 +71,7 @@
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <!-- gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
