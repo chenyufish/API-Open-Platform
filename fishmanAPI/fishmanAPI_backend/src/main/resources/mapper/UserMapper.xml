@@ -4,16 +4,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fishman.project.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="com.fishman.fishmanAPI_common.model.entity.User">
+    <resultMap id="BaseResultMap" type="com.fishman.project.model.entity.User">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="userName" column="userName" jdbcType="VARCHAR"/>
             <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>
             <result property="userAvatar" column="userAvatar" jdbcType="VARCHAR"/>
-            <result property="gender" column="gender" jdbcType="TINYINT"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="VARCHAR"/>
             <result property="userRole" column="userRole" jdbcType="VARCHAR"/>
             <result property="userPassword" column="userPassword" jdbcType="VARCHAR"/>
             <result property="accessKey" column="accessKey" jdbcType="VARCHAR"/>
             <result property="secretKey" column="secretKey" jdbcType="VARCHAR"/>
+            <result property="balance" column="balance" jdbcType="BIGINT"/>
+            <result property="invitationCode" column="invitationCode" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
             <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
             <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
@@ -21,8 +25,10 @@
 
     <sql id="Base_Column_List">
         id,userName,userAccount,
-        userAvatar,gender,userRole,
-        userPassword,accessKey,secretKey,
-        createTime,updateTime,isDelete
+        userAvatar,email,gender,
+        userRole,userPassword,accessKey,
+        secretKey,balance,invitationCode,
+        status,createTime,updateTime,
+        isDelete
     </sql>
 </mapper>

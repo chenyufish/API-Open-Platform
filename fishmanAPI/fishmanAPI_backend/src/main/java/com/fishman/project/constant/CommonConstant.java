@@ -3,7 +3,7 @@ package com.fishman.project.constant;
 /**
  * 通用常量
  *
- * @author fishman
+ * @author qimu
  */
 public interface CommonConstant {
 
