@@ -690,9 +690,45 @@ zookeeper 注册中心：通过内嵌的方式运行，更方便
         </dependency>
 ```
 
+# 抽象服务抽取
+
+服务抽取：
+					1.数据库中查是否已分配给用户秘钥（根据accessK©y拿到用户信	息，返回用户信息，为空表示不存在）
+					2.从数据库中查询模拟接口是否存在（请求路径、请求方法、请求参数，返回接口信息，为空表示不存在）
+
+	3. 接口调用次数+1 
+
+invokeCount(accessKey、secretKey(标识用户)，请求接口路径)
+
+步骤：
+
+1. 新建干净的maven项目，只保留必要的公共依赖
+2. 抽取service和实体类
+3. install本地maven包
+4. 让服务提供者引入common包，测试是否正常运行
+5. 让服务消费者引入common包
+
+注意：还是要引入一个spring starter
 
 
 
+# 统计分析功能
 
+需求；得到每一个接口总调用次数的占比，展示前三个，从而下线或者限制少人用的接口，增加或者收费高频接口
 
+前端实现：比如：
 
+* ECharts:https://echarts..apache.org/zh/index.html(推荐
+* AntV:https://antv.vision/zh(推荐
+* BizCharts
+  如果是react项目，就用
+* 如果是React项目，用这个库：https://github.com/hustcc/echarts-for-react
+
+后端实现：
+
+步骤：
+
+1. SQL查询调用数据：select interfacelnfold,sum(totalNum)as totalNum from user interface info
+   group by interfacelnfold order by totalNum desc limit 3;
+   2.业务层去关联查询接口信息
+   
