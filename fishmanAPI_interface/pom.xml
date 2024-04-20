@@ -15,6 +15,16 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>icu.qimuu</groupId>
+            <artifactId>qi-api-sdk</artifactId>
+            <version>0.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>icu.qimuu</groupId>
+            <artifactId>EasyWeb</artifactId>
+            <version>0.0.6</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
