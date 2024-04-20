@@ -2,7 +2,7 @@ package com.fishman.project.service.inner.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fishman.fishmanAPI_common.model.entity.User;
-import com.fishman.fishmanAPI_common.service.InnerUserService;
+import com.fishman.fishmanAPI_common.service.inner.InnerUserService;
 import com.fishman.project.common.ErrorCode;
 import com.fishman.project.exception.BusinessException;
 import com.fishman.project.mapper.UserMapper;
