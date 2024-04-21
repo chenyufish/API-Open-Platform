@@ -15,30 +15,30 @@ import com.alipay.api.response.AlipayTradePagePayResponse;
 import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.config.AliPayAccountConfig;
+import com.fishman.project.config.EmailConfig;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.mapper.ProductOrderMapper;
+import com.fishman.project.model.alipay.AliPayAsyncResponse;
+import com.fishman.project.model.entity.ProductInfo;
+import com.fishman.project.model.entity.ProductOrder;
+import com.fishman.project.model.entity.RechargeActivity;
+import com.fishman.project.model.entity.User;
+import com.fishman.project.model.enums.AlipayTradeStatusEnum;
+import com.fishman.project.model.vo.PaymentInfoVo;
+import com.fishman.project.model.vo.ProductOrderVo;
+import com.fishman.project.model.vo.UserVO;
+import com.fishman.project.service.PaymentInfoService;
+import com.fishman.project.service.ProductOrderService;
+import com.fishman.project.service.RechargeActivityService;
+import com.fishman.project.service.UserService;
+import com.fishman.project.utils.EmailUtil;
+import com.fishman.project.utils.RedissonLockUtil;
 import com.github.binarywang.wxpay.bean.result.WxPayOrderQueryV3Result;
 import com.ijpay.alipay.AliPayApi;
 import com.ijpay.alipay.AliPayApiConfigKit;
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.config.AliPayAccountConfig;
-import com.qimu.qiapibackend.config.EmailConfig;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.mapper.ProductOrderMapper;
-import com.qimu.qiapibackend.model.alipay.AliPayAsyncResponse;
-import com.qimu.qiapibackend.model.entity.ProductInfo;
-import com.qimu.qiapibackend.model.entity.ProductOrder;
-import com.qimu.qiapibackend.model.entity.RechargeActivity;
-import com.qimu.qiapibackend.model.entity.User;
-import com.qimu.qiapibackend.model.enums.AlipayTradeStatusEnum;
-import com.qimu.qiapibackend.model.enums.PaymentStatusEnum;
-import com.qimu.qiapibackend.model.vo.PaymentInfoVo;
-import com.qimu.qiapibackend.model.vo.ProductOrderVo;
-import com.qimu.qiapibackend.model.vo.UserVO;
-import com.qimu.qiapibackend.service.PaymentInfoService;
-import com.qimu.qiapibackend.service.ProductOrderService;
-import com.qimu.qiapibackend.service.RechargeActivityService;
-import com.qimu.qiapibackend.service.UserService;
-import com.qimu.qiapibackend.utils.EmailUtil;
-import com.qimu.qiapibackend.utils.RedissonLockUtil;
+
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -55,15 +55,15 @@ import java.math.RoundingMode;
 import java.util.Date;
 import java.util.Map;
 
-import static com.qimu.qiapibackend.constant.PayConstant.*;
-import static com.qimu.qiapibackend.model.enums.PayTypeStatusEnum.ALIPAY;
-import static com.qimu.qiapibackend.model.enums.PaymentStatusEnum.*;
+import static com.fishman.project.constant.PayConstant.ORDER_PREFIX;
+import static com.fishman.project.constant.PayConstant.RESPONSE_CODE_SUCCESS;
+import static com.fishman.project.model.enums.AlipayTradeStatusEnum.TRADE_SUCCESS;
+import static com.fishman.project.model.enums.PayTypeStatusEnum.ALIPAY;
+import static com.fishman.project.model.enums.PaymentStatusEnum.*;
 
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/23 03:18:35
- * @Version: 1.0
+
  * @Description: 接口顺序服务impl
  */
 @Service
@@ -92,7 +92,7 @@ public class AlipayOrderServiceImpl extends ServiceImpl<ProductOrderMapper, Prod
     public ProductOrderVo getProductOrder(Long productId, UserVO loginUser, String payType) {
         LambdaQueryWrapper<ProductOrder> lambdaQueryWrapper = new LambdaQueryWrapper<>();
         lambdaQueryWrapper.eq(ProductOrder::getProductId, productId);
-        lambdaQueryWrapper.eq(ProductOrder::getStatus, PaymentStatusEnum.NOTPAY.getValue());
+        lambdaQueryWrapper.eq(ProductOrder::getStatus, NOTPAY.getValue());
         lambdaQueryWrapper.eq(ProductOrder::getPayType, payType);
         lambdaQueryWrapper.eq(ProductOrder::getUserId, loginUser.getId());
         ProductOrder oldOrder = this.getOne(lambdaQueryWrapper);
@@ -123,7 +123,7 @@ public class AlipayOrderServiceImpl extends ServiceImpl<ProductOrderMapper, Prod
         productOrder.setProductId(productInfo.getId());
         productOrder.setOrderName(productInfo.getName());
         productOrder.setTotal(productInfo.getTotal());
-        productOrder.setStatus(PaymentStatusEnum.NOTPAY.getValue());
+        productOrder.setStatus(NOTPAY.getValue());
         productOrder.setPayType(ALIPAY.getValue());
         productOrder.setExpirationTime(expirationTime);
         productOrder.setProductInfo(JSONUtil.toJsonPrettyStr(productInfo));
@@ -214,7 +214,7 @@ public class AlipayOrderServiceImpl extends ServiceImpl<ProductOrderMapper, Prod
             // 本地创建了订单,但是用户没有扫码,支付宝端没有订单
             if (!alipayTradeQueryResponse.getCode().equals(RESPONSE_CODE_SUCCESS)) {
                 // 更新本地订单状态
-                this.updateOrderStatusByOrderNo(orderNo, PaymentStatusEnum.CLOSED.getValue());
+                this.updateOrderStatusByOrderNo(orderNo, CLOSED.getValue());
                 log.info("超时订单{},更新成功", orderNo);
                 return;
             }
@@ -222,7 +222,7 @@ public class AlipayOrderServiceImpl extends ServiceImpl<ProductOrderMapper, Prod
             // 订单没有支付就关闭订单,更新本地订单状态
             if (tradeStatus.equals(NOTPAY.getValue()) || tradeStatus.equals(CLOSED.getValue())) {
                 closedOrderByOrderNo(orderNo);
-                this.updateOrderStatusByOrderNo(orderNo, PaymentStatusEnum.CLOSED.getValue());
+                this.updateOrderStatusByOrderNo(orderNo, CLOSED.getValue());
                 log.info("超时订单{},关闭成功", orderNo);
                 return;
             }

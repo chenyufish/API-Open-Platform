@@ -5,61 +5,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9fa0bea-1449-488c-bdfc-6e99cb0ac55b" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/154e4a6f43f170ea8b31192bbaea45d301fcf3cb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/15f09065c9fe6545bfd703fc3fbd8052e5f35553" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1ea55638ebf185ad180d60c0cea4e7fdae1d226e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c32c3fc1619f20f7318f9b6ccd8531f527a0b41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58d60920922d3f5520d55e5f9602f76cf17176f7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cf0f8262d55eb87900c7f4ab9ea19e58d130bba" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/69b02d3adafafc9743db3ea934062080c5ebbba5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/845c71371f4cd9dd1a0f246ca255d1f2a4892263" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/855e3b8c92ab546a1ff3b4e1a656fb4590928194" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/964f1554e322441299d5e91316dc05364f867bfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6a6b63bcfba018c287444f6695f16311e9d9ae1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/5/154e4a6f43f170ea8b31192bbaea45d301fcf3cb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/5/15f09065c9fe6545bfd703fc3fbd8052e5f35553" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/e/1ea55638ebf185ad180d60c0cea4e7fdae1d226e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/c/2c32c3fc1619f20f7318f9b6ccd8531f527a0b41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/58d60920922d3f5520d55e5f9602f76cf17176f7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5cf0f8262d55eb87900c7f4ab9ea19e58d130bba" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/9/69b02d3adafafc9743db3ea934062080c5ebbba5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/4/845c71371f4cd9dd1a0f246ca255d1f2a4892263" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/5/855e3b8c92ab546a1ff3b4e1a656fb4590928194" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/6/964f1554e322441299d5e91316dc05364f867bfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/6/f6a6b63bcfba018c287444f6695f16311e9d9ae1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b05f26c0-7353-4164-8c43-044c05679e4e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b05f26c0-7353-4164-8c43-044c05679e4e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c67487cf07d7374e32032f874a030ceed3ad4ef7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/6/c67487cf07d7374e32032f874a030ceed3ad4ef7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/config/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/config/Knife4jConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/config/MyBatisPlusConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/constant/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/constant/CommonConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/constant/UserConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/constant/UserConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/AnalysisController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/aop/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/aop/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/aop/LogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/aop/LogInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/common/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/common/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/common/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/common/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/common/ResultUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/common/ResultUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/DailyCheckInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/DailyCheckInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/InterfaceInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/InterfaceInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/PostController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/ProductInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/ProductInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/controller/UserInterfaceInfoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/job/DailyCheckInJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/job/DailyCheckInJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/job/PayJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/job/PayJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/mapper/InterfaceInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/mapper/InterfaceInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/mapper/PostMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/mapper/UserInterfaceInfoMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/interfaceInfo/InterfaceInfoAddRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/interfaceInfo/InterfaceInfoInvokeRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/interfaceInfo/InterfaceInfoQueryRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/interfaceInfo/InterfaceInfoUpdateRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/post/PostAddRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/post/PostDoThumbRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/post/PostQueryRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/post/PostUpdateRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserAddRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserLoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserQueryRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserRegisterRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserUpdateRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/userInterfaceInfo/UserInterfaceInfoAddRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/userInterfaceInfo/UserInterfaceInfoInvokeRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/userInterfaceInfo/UserInterfaceInfoQueryRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/userInterfaceInfo/UserInterfaceInfoUpdateRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/InterfaceInfoStatusEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/PostGenderEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/PostReviewStatusEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/InterfaceInfoVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/PostVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/UserVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/InterfaceInfoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/UserInterfaceInfoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/InterfaceInfoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/PostServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/UserInterfaceInfoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/inner/impl/InnerInterfaceInfoServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/inner/impl/InnerUserInterfaceInvokeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/inner/impl/InnerUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/pay/PayCreateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/pay/PayCreateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoQueryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoSearchTextRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoSearchTextRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productinfo/ProductInfoUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productorder/ProductOrderAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productorder/ProductOrderAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productorder/ProductOrderQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/productorder/ProductOrderQueryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserBindEmailRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserBindEmailRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserEmailLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserEmailLoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserEmailRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserEmailRegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserUnBindEmailRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/dto/user/UserUnBindEmailRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/DailyCheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/DailyCheckIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/PaymentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/PaymentInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/ProductOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/ProductOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/RechargeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/RechargeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/UserInterfaceInvoke.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/entity/UserInterfaceInvoke.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/AlipayTradeStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/AlipayTradeStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/PayTypeStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/PayTypeStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/PaymentStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/PaymentStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/ProductTypeStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/ProductTypeStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/UserAccountStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/enums/UserAccountStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/ImageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/ImageVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/InterfaceInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/InterfaceInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/OrderVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/OrderVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/PaymentInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/PaymentInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/ProductOrderVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/model/vo/ProductOrderVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/ProductOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/ProductOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/AlipayOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/AlipayOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/DailyCheckInServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/DailyCheckInServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/PaymentInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/PaymentInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/RechargeActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/RechargeActivityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/WxOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/impl/WxOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/inner/impl/UserInterfaceInvokeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/service/inner/impl/UserInterfaceInvokeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/utils/RedissonLockUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/utils/RedissonLockUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/utils/WxPayUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/java/com/fishman/project/utils/WxPayUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/mapper/InterfaceInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/mapper/InterfaceInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/mapper/PostMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/mapper/UserInterfaceInfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fishmanAPI_backend/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../问题文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/../问题文档.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,9 +130,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "G:/java_projects/java_project/API开放平台/API-Open-Platform/fishmanAPI/fishmanAPI_backend",
+    "last_opened_file_path": "G:/BaiduNetdiskDownload/API开放平台/qi-api-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,6 +147,9 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunManager" selected="Spring Boot.MyApplication">
     <configuration name="FishmanApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -140,6 +177,17 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringProfilesService">
+    <option name="activeProfiles">
+      <map>
+        <entry key="fishmanAPI" value="pom.xml" />
+        <entry key="fishmanAPI_backend" value="pom.xml" />
+        <entry key="fishmanAPI_common" value="pom.xml" />
+        <entry key="fishmanAPI_gateway" value="pom.xml" />
+        <entry key="fishmanAPI_interface" value="pom.xml" />
+      </map>
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="c9fa0bea-1449-488c-bdfc-6e99cb0ac55b" name="更改" comment="" />
@@ -150,6 +198,7 @@
       <workItem from="1713608674698" duration="175000" />
       <workItem from="1713627006299" duration="23000" />
       <workItem from="1713627356665" duration="5675000" />
+      <workItem from="1713684653328" duration="4218000" />
     </task>
     <servers />
   </component>

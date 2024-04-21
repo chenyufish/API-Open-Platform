@@ -3,21 +3,22 @@ package com.fishman.project.controller;
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.qimu.qiapibackend.common.BaseResponse;
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.common.ResultUtils;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.model.dto.pay.PayCreateRequest;
-import com.qimu.qiapibackend.model.dto.productorder.ProductOrderQueryRequest;
-import com.qimu.qiapibackend.model.entity.ProductInfo;
-import com.qimu.qiapibackend.model.entity.ProductOrder;
-import com.qimu.qiapibackend.model.enums.PaymentStatusEnum;
-import com.qimu.qiapibackend.model.vo.OrderVo;
-import com.qimu.qiapibackend.model.vo.ProductOrderVo;
-import com.qimu.qiapibackend.model.vo.UserVO;
-import com.qimu.qiapibackend.service.OrderService;
-import com.qimu.qiapibackend.service.ProductOrderService;
-import com.qimu.qiapibackend.service.UserService;
+
+import com.fishman.project.common.BaseResponse;
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.common.ResultUtils;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.model.dto.pay.PayCreateRequest;
+import com.fishman.project.model.dto.productorder.ProductOrderQueryRequest;
+import com.fishman.project.model.entity.ProductInfo;
+import com.fishman.project.model.entity.ProductOrder;
+import com.fishman.project.model.enums.PaymentStatusEnum;
+import com.fishman.project.model.vo.OrderVo;
+import com.fishman.project.model.vo.ProductOrderVo;
+import com.fishman.project.model.vo.UserVO;
+import com.fishman.project.service.OrderService;
+import com.fishman.project.service.ProductOrderService;
+import com.fishman.project.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -33,16 +34,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static com.qimu.qiapibackend.constant.PayConstant.QUERY_ORDER_STATUS;
-import static com.qimu.qiapibackend.model.enums.PaymentStatusEnum.SUCCESS;
+import static com.fishman.project.constant.PayConstant.QUERY_ORDER_STATUS;
+import static com.fishman.project.model.enums.PaymentStatusEnum.SUCCESS;
 
 
-/**
- * @Author: QiMu
- * @Date: 2023年08月23日 00:13
- * @Version: 1.0
- * @Description:
- */
 @RestController
 @Slf4j
 @RequestMapping("/order")
@@ -120,14 +115,13 @@ public class OrderController {
      *
      * @param productOrderQueryRequest 接口信息查询请求
      * @param request                  请求
-     * @return {@link BaseResponse}<{@link Page}<{@link com.qimu.qiapibackend.model.entity.ProductOrder}>>
      */
     @GetMapping("/list/page")
     public BaseResponse<OrderVo> listProductOrderByPage(ProductOrderQueryRequest productOrderQueryRequest, HttpServletRequest request) {
         if (productOrderQueryRequest == null) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-        com.qimu.qiapibackend.model.entity.ProductOrder productOrder = new com.qimu.qiapibackend.model.entity.ProductOrder();
+        com.fishman.project.model.entity.ProductOrder productOrder = new com.fishman.project.model.entity.ProductOrder();
         BeanUtils.copyProperties(productOrderQueryRequest, productOrder);
         long size = productOrderQueryRequest.getPageSize();
         String orderName = productOrderQueryRequest.getOrderName();

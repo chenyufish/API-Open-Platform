@@ -17,7 +17,7 @@ import java.util.UUID;
 /**
  * 请求响应日志 AOP
  *
- * @author fishman
+ * @author qimu
  **/
 @Aspect
 @Component
@@ -27,7 +27,7 @@ public class LogInterceptor {
     /**
      * 执行拦截
      */
-    @Around("execution(* com.fishman.project.controller.*.*(..))")
+    @Around("execution(* com.qimu.qiapibackend.controller.*.*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         // 计时
         StopWatch stopWatch = new StopWatch();

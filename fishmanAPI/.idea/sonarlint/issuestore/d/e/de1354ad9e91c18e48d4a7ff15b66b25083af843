@@ -1,0 +1,27 @@
+
+p
+java:S1066'"/Merge this if statement with the enclosing one.(²ÎÖ…úÿÿÿÿJ$ae433d1a-12d0-4bcd-abf8-98adbf547dc8
+{
+java:S1854#":Remove this useless assignment to local variable "status".(ÿÏ×İúÿÿÿÿJ$a1d679ac-e25e-4a76-9300-8dbc8e28d9a0
+~
+java:S1854""BRemove this useless assignment to local variable "responseHeader".(›Á¢J$46c17261-fc90-4fc8-9e30-8ea17e205c72
+‚
+java:S1854!"ARemove this useless assignment to local variable "requestHeader".(Ô•€øÿÿÿÿJ$2c747de7-7c7d-45bf-b539-8659fbadaef1
+~
+java:S1854 "BRemove this useless assignment to local variable "requestExample".(ØğıŠJ$22b5f425-d1e2-4124-b1a4-3156f98b7e5c
+‚
+java:S1854"ARemove this useless assignment to local variable "requestParams".(àÙû•üÿÿÿÿJ$9bceeffe-b12a-4a99-a9c1-2dea1584b84f
+{
+java:S1854":Remove this useless assignment to local variable "userId".(Ò¾¢²şÿÿÿÿJ$7e9a0ed1-bc7c-486b-b73f-f00196e98124
+l
+java:S1481"+Remove this unused "userId" local variable.(Ò¾¢²şÿÿÿÿJ$d8cba2fb-18cb-410a-aafe-191f2f058ae4
+s
+java:S1481"2Remove this unused "requestParams" local variable.(àÙû•üÿÿÿÿJ$d81b43dc-e751-4b40-8dc0-e4f5c2dace96
+o
+java:S1481 "3Remove this unused "requestExample" local variable.(ØğıŠJ$8fbf9d5a-88f9-42ba-bc61-5ded9b70d9f8
+s
+java:S1481!"2Remove this unused "requestHeader" local variable.(Ô•€øÿÿÿÿJ$701ad357-79c2-4218-92e5-7a9dae0712a5
+o
+java:S1481""3Remove this unused "responseHeader" local variable.(›Á¢J$3f8af06b-8df4-4243-8dda-93eafd4b2a53
+l
+java:S1481#"+Remove this unused "status" local variable.(ÿÏ×İúÿÿÿÿJ$8d2d3936-5836-469f-be2b-57c035c0a091

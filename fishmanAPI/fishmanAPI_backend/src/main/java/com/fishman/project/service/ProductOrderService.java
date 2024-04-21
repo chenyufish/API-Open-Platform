@@ -5,6 +5,7 @@ package com.fishman.project.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.fishman.project.model.entity.ProductOrder;
 import com.fishman.project.model.vo.ProductOrderVo;
+import com.fishman.project.model.vo.UserVO;
 
 import javax.servlet.http.HttpServletRequest;
 

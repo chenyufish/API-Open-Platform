@@ -1,5 +1,7 @@
 package com.fishman.project.model.dto.productinfo;
 
+
+import com.fishman.project.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import java.io.Serializable;

@@ -7,9 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Author: QiMu
- * @Date: 2023/09/11 11:26:50
- * @Version: 1.0
+
  * @Description: 充值活动表
  */
 @TableName(value = "recharge_activity")

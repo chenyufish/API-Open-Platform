@@ -1,9 +1,10 @@
 package com.fishman.project.job;
 
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.qimu.qiapibackend.model.entity.DailyCheckIn;
-import com.qimu.qiapibackend.service.DailyCheckInService;
-import com.qimu.qiapibackend.utils.RedissonLockUtil;
+import com.fishman.project.model.entity.DailyCheckIn;
+import com.fishman.project.service.DailyCheckInService;
+import com.fishman.project.utils.RedissonLockUtil;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -12,9 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/31 12:10:58
- * @Version: 1.0
+
  * @Description: 签到任务
  */
 @Component

@@ -4,20 +4,21 @@ import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fishman.fishmanAPI_common.model.entity.InterfaceInfo;
+import com.fishman.project.annotation.AuthCheck;
+import com.fishman.project.common.*;
+import com.fishman.project.constant.CommonConstant;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.model.dto.interfaceinfo.*;
+import com.fishman.project.model.entity.User;
+import com.fishman.project.model.enums.InterfaceStatusEnum;
+import com.fishman.project.model.vo.UserVO;
+import com.fishman.project.service.InterfaceInfoService;
+import com.fishman.project.service.UserService;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
-import com.qimu.qiapibackend.annotation.AuthCheck;
-import com.qimu.qiapibackend.common.*;
-import com.qimu.qiapibackend.constant.CommonConstant;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.model.dto.interfaceinfo.*;
-import com.qimu.qiapibackend.model.entity.User;
-import com.qimu.qiapibackend.model.enums.InterfaceStatusEnum;
-import com.qimu.qiapibackend.model.vo.UserVO;
-import com.qimu.qiapibackend.service.InterfaceInfoService;
-import com.qimu.qiapibackend.service.UserService;
-import com.qimu.qiapicommon.model.entity.InterfaceInfo;
+
 import icu.qimuu.qiapisdk.client.QiApiClient;
 import icu.qimuu.qiapisdk.model.request.CurrencyRequest;
 import icu.qimuu.qiapisdk.model.response.ResultResponse;
@@ -35,7 +36,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static com.qimu.qiapibackend.constant.UserConstant.ADMIN_ROLE;
+import static com.fishman.project.constant.UserConstant.ADMIN_ROLE;
+
 
 /**
  * 帖子接口

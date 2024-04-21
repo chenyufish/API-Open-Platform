@@ -1,0 +1,15 @@
+
+w
+java:S1066""/Merge this if statement with the enclosing one.(¶Ø×¶ùÿÿÿÿ8›Ý®ýï1J$13c56b03-2d09-44c3-9610-533ab56e0cc7
+‡
+java:S1854"?Remove this useless assignment to local variable "productType".(ÔÞŽ„þÿÿÿÿ8 Ý®ýï1J$0bb0d317-ca12-48e8-b168-0068bdceb440
+Š
+java:S1854"BRemove this useless assignment to local variable "expirationTime".(ž€èßýÿÿÿÿ8 Ý®ýï1J$4e9506d3-f7cc-4ea0-af6d-ccb6a8c78eec
+‚
+java:S1854"?Remove this useless assignment to local variable "description".(˜ìª£8 Ý®ýï1J$36adea62-3794-4e74-abf0-4d6d5fdcb5a0
+s
+java:S1481"0Remove this unused "description" local variable.(˜ìª£8¢Ý®ýï1J$6f162951-08de-4d70-8580-03f53321745e
+{
+java:S1481"3Remove this unused "expirationTime" local variable.(ž€èßýÿÿÿÿ8¢Ý®ýï1J$fd783cc9-12ee-4a63-9212-b1f694f8fdb7
+x
+java:S1481"0Remove this unused "productType" local variable.(ÔÞŽ„þÿÿÿÿ8£Ý®ýï1J$88848d82-3e6c-4108-80e0-bb6aee46795a

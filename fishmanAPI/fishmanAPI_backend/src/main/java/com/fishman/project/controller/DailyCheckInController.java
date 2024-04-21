@@ -8,6 +8,7 @@ import com.fishman.project.common.ResultUtils;
 import com.fishman.project.exception.BusinessException;
 import com.fishman.project.model.entity.DailyCheckIn;
 
+import com.fishman.project.model.vo.UserVO;
 import com.fishman.project.service.DailyCheckInService;
 import com.fishman.project.service.UserService;
 import com.fishman.project.utils.RedissonLockUtil;

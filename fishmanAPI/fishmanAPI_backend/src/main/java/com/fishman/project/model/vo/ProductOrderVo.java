@@ -1,17 +1,11 @@
 package com.fishman.project.model.vo;
 
-import com.qimu.qiapibackend.model.entity.ProductInfo;
+import com.fishman.project.model.entity.ProductInfo;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @Author: QiMu
- * @Date: 2023年08月23日 18:02
- * @Version: 1.0
- * @Description:
- */
 @Data
 public class ProductOrderVo implements Serializable {
 

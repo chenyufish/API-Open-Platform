@@ -1,0 +1,11 @@
+
+‡	java:S112‘"FDefine and throw a dedicated exception instead of using a generic one.(Ê“ÅıÿÿÿÿJ$ec628fba-32e5-4810-a69b-d66384278642
+ˆ
+java:S6830E"GRename this bean to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óŠşßşÿÿÿÿJ$a5bc5b99-5fe7-4adb-a586-6ab10edaac4f
+V
+java:S2178©"Correct this "&" to "&&".(ê«úÇJ$d2403525-cb64-4713-ab4e-e4a90e6cfd33
+”
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(†ê†©ûÿÿÿÿJ$60592c72-db23-4eee-a9c2-81943f7a3cce
+›
+java:S2142Ò"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾J$4217eab4-d580-40af-bff8-f51ed31a24dc
+g	java:S106Û"+Replace this use of System.out by a logger.(À‹…ÓJ$48e3d0b7-da32-4478-94a6-e9fa36733cfc

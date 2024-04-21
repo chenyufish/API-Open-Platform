@@ -1,10 +1,11 @@
 package com.fishman.project.aop;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import com.fishman.fishmanAPI_common.model.entity.User;
+
 import com.fishman.project.annotation.AuthCheck;
 import com.fishman.project.common.ErrorCode;
 import com.fishman.project.exception.BusinessException;
+import com.fishman.project.model.vo.UserVO;
 import com.fishman.project.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -21,9 +22,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 /**
  * 权限校验 AOP
  *
+ * @author qimu
  */
 @Aspect
 @Component
@@ -35,9 +38,10 @@ public class AuthInterceptor {
     /**
      * 执行拦截
      *
-     * @param joinPoint
-     * @param authCheck
-     * @return
+     * @param joinPoint 连接点
+     * @param authCheck 身份验证检查
+     * @return {@link Object}
+     * @throws Throwable 可丢弃
      */
     @Around("@annotation(authCheck)")
     public Object doInterceptor(ProceedingJoinPoint joinPoint, AuthCheck authCheck) throws Throwable {
@@ -46,7 +50,7 @@ public class AuthInterceptor {
         RequestAttributes requestAttributes = RequestContextHolder.currentRequestAttributes();
         HttpServletRequest request = ((ServletRequestAttributes) requestAttributes).getRequest();
         // 当前登录用户
-        User user = userService.getLoginUser(request);
+        UserVO user = userService.getLoginUser(request);
         // 拥有任意权限即通过
         if (CollectionUtils.isNotEmpty(anyRole)) {
             String userRole = user.getUserRole();

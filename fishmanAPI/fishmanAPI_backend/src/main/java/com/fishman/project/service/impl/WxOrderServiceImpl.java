@@ -5,7 +5,25 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.config.EmailConfig;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.mapper.ProductOrderMapper;
+import com.fishman.project.model.entity.ProductInfo;
+import com.fishman.project.model.entity.ProductOrder;
+import com.fishman.project.model.entity.RechargeActivity;
+import com.fishman.project.model.entity.User;
+import com.fishman.project.model.vo.PaymentInfoVo;
+import com.fishman.project.model.vo.ProductOrderVo;
+import com.fishman.project.model.vo.UserVO;
+import com.fishman.project.service.PaymentInfoService;
+import com.fishman.project.service.ProductOrderService;
+import com.fishman.project.service.RechargeActivityService;
+import com.fishman.project.service.UserService;
+import com.fishman.project.utils.EmailUtil;
 import com.github.binarywang.wxpay.bean.notify.WxPayNotifyResponse;
 import com.github.binarywang.wxpay.bean.notify.WxPayOrderNotifyV3Result;
 import com.github.binarywang.wxpay.bean.request.WxPayOrderQueryV3Request;
@@ -15,22 +33,7 @@ import com.github.binarywang.wxpay.bean.result.enums.TradeTypeEnum;
 import com.github.binarywang.wxpay.constant.WxPayConstants;
 import com.github.binarywang.wxpay.exception.WxPayException;
 import com.github.binarywang.wxpay.service.WxPayService;
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.config.EmailConfig;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.mapper.ProductOrderMapper;
-import com.qimu.qiapibackend.model.entity.ProductInfo;
-import com.qimu.qiapibackend.model.entity.ProductOrder;
-import com.qimu.qiapibackend.model.entity.RechargeActivity;
-import com.qimu.qiapibackend.model.entity.User;
-import com.qimu.qiapibackend.model.vo.PaymentInfoVo;
-import com.qimu.qiapibackend.model.vo.ProductOrderVo;
-import com.qimu.qiapibackend.model.vo.UserVO;
-import com.qimu.qiapibackend.service.PaymentInfoService;
-import com.qimu.qiapibackend.service.ProductOrderService;
-import com.qimu.qiapibackend.service.RechargeActivityService;
-import com.qimu.qiapibackend.service.UserService;
-import com.qimu.qiapibackend.utils.EmailUtil;
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.redisson.api.RLock;
@@ -50,17 +53,15 @@ import java.math.RoundingMode;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import static com.qimu.qiapibackend.constant.PayConstant.ORDER_PREFIX;
-import static com.qimu.qiapibackend.constant.PayConstant.QUERY_ORDER_STATUS;
-import static com.qimu.qiapibackend.model.enums.PayTypeStatusEnum.WX;
-import static com.qimu.qiapibackend.model.enums.PaymentStatusEnum.*;
-import static com.qimu.qiapibackend.utils.WxPayUtil.getRequestHeader;
+import static com.fishman.project.constant.PayConstant.ORDER_PREFIX;
+import static com.fishman.project.constant.PayConstant.QUERY_ORDER_STATUS;
+import static com.fishman.project.model.enums.PayTypeStatusEnum.WX;
+import static com.fishman.project.model.enums.PaymentStatusEnum.*;
+import static com.fishman.project.utils.WxPayUtil.getRequestHeader;
 
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/23 03:18:35
- * @Version: 1.0
+
  * @Description: 接口顺序服务impl
  */
 @Slf4j

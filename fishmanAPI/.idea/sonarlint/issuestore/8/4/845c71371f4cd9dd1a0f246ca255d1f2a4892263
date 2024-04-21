@@ -1,0 +1,12 @@
+
+	java:S112™"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ó˜øüï1J$b289a836-4e33-44db-9ebd-4bd5d3bc33b7
+Œ
+java:S1192¨"HDefine a constant instead of duplicating this literal "success" 4 times.(ı®Áê8Õ˜øüï1J$da482685-c29c-48f6-a1f3-2aa393a604dd
+Š
+java:S6830G"GRename this bean to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç†Šù8ç˜øüï1J$fc3c4665-cee2-41bf-8a83-13d7580a9589
+]
+java:S2178"Correct this "&" to "&&".(ê«úÇ8ò˜øüï1J$4694ab10-d50e-4985-b662-b6b752813067
+]
+java:S2178ı"Correct this "&" to "&&".(ç¡ØÖ8ù˜øüï1J$8a3d79ea-0dc1-48be-adec-dd23102b0904
+]
+java:S2178ı"Correct this "&" to "&&".(ç¡ØÖ8ù˜øüï1J$eb3f1b90-dd0b-4995-b9e8-2fc6e8923618

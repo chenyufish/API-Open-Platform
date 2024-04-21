@@ -1,9 +1,10 @@
 package com.fishman.project.job;
 
-import com.qimu.qiapibackend.model.entity.ProductOrder;
-import com.qimu.qiapibackend.service.OrderService;
-import com.qimu.qiapibackend.service.ProductOrderService;
-import com.qimu.qiapibackend.utils.RedissonLockUtil;
+
+import com.fishman.project.model.entity.ProductOrder;
+import com.fishman.project.service.OrderService;
+import com.fishman.project.service.ProductOrderService;
+import com.fishman.project.utils.RedissonLockUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -11,13 +12,12 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.List;
 
-import static com.qimu.qiapibackend.model.enums.PayTypeStatusEnum.ALIPAY;
-import static com.qimu.qiapibackend.model.enums.PayTypeStatusEnum.WX;
+import static com.fishman.project.model.enums.PayTypeStatusEnum.ALIPAY;
+import static com.fishman.project.model.enums.PayTypeStatusEnum.WX;
+
 
 /**
- * @Author: QiMu
- * @Date: 2023年08月24日 09:24
- * @Version: 1.0
+
  * @Description:
  */
 @Slf4j

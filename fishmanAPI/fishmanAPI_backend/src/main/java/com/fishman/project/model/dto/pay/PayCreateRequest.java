@@ -5,9 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/25 05:00:08
- * @Version: 1.0
+
  * @Description: 付款创建请求
  */
 @Data

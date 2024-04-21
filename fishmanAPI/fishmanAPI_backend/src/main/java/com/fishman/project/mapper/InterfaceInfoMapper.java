@@ -1,7 +1,8 @@
 package com.fishman.project.mapper;
 
-import generator.domain.InterfaceInfo;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.fishman.fishmanAPI_common.model.entity.InterfaceInfo;
 
 /**
 * @author fishman

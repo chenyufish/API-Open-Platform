@@ -7,9 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Author: QiMu
- * @Date: 2023/09/04 11:30:31
- * @Version: 1.0
+
  * @Description: 用户接口调用表
  */
 @TableName(value = "user_interface_invoke")

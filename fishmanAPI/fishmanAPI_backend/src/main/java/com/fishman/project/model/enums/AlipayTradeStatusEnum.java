@@ -2,12 +2,11 @@ package com.fishman.project.model.enums;
 
 import lombok.Getter;
 
-import static com.qimu.qiapibackend.model.enums.PaymentStatusEnum.*;
+import static com.fishman.project.model.enums.PaymentStatusEnum.*;
+
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/27 03:08:11
- * @Version: 1.0
+
  * @Description: 支付宝贸易状态枚举
  */
 @Getter

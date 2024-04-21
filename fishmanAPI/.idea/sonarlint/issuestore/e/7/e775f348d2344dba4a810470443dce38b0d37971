@@ -1,0 +1,6 @@
+
+	java:S116&"PRename this field "ONE_M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÓ×±ıÿÿÿÿJ$25f00900-3ca3-4114-8e22-ce308e10069f
+b
+java:S1170&"!Make this final field static too.(öÓ×±ıÿÿÿÿJ$a1e9d69b-a944-4f87-a70b-27ef04215339
+
+java:S4042Y"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ÌÇ§ÄøÿÿÿÿJ$4302fcdd-5977-4c6b-a765-e27bb06c1f4d

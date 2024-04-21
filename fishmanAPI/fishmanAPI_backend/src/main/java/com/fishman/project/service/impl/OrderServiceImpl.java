@@ -1,19 +1,20 @@
 package com.fishman.project.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.model.entity.ProductInfo;
-import com.qimu.qiapibackend.model.entity.ProductOrder;
-import com.qimu.qiapibackend.model.entity.RechargeActivity;
-import com.qimu.qiapibackend.model.enums.PaymentStatusEnum;
-import com.qimu.qiapibackend.model.enums.ProductTypeStatusEnum;
-import com.qimu.qiapibackend.model.vo.ProductOrderVo;
-import com.qimu.qiapibackend.model.vo.UserVO;
-import com.qimu.qiapibackend.service.OrderService;
-import com.qimu.qiapibackend.service.ProductOrderService;
-import com.qimu.qiapibackend.service.RechargeActivityService;
-import com.qimu.qiapibackend.utils.RedissonLockUtil;
+
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.model.entity.ProductInfo;
+import com.fishman.project.model.entity.ProductOrder;
+import com.fishman.project.model.entity.RechargeActivity;
+import com.fishman.project.model.enums.PaymentStatusEnum;
+import com.fishman.project.model.enums.ProductTypeStatusEnum;
+import com.fishman.project.model.vo.ProductOrderVo;
+import com.fishman.project.model.vo.UserVO;
+import com.fishman.project.service.OrderService;
+import com.fishman.project.service.ProductOrderService;
+import com.fishman.project.service.RechargeActivityService;
+import com.fishman.project.utils.RedissonLockUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -26,13 +27,11 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
 
-import static com.qimu.qiapibackend.model.enums.PayTypeStatusEnum.ALIPAY;
-import static com.qimu.qiapibackend.model.enums.PayTypeStatusEnum.WX;
+import static com.fishman.project.model.enums.PayTypeStatusEnum.ALIPAY;
+import static com.fishman.project.model.enums.PayTypeStatusEnum.WX;
+
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/25 06:22:02
- * @Version: 1.0
  * @Description: 订单服务
  */
 @Slf4j

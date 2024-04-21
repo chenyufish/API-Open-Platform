@@ -10,9 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Author: QiMu
- * @Date: 2023/09/04 11:31:48
- * @Version: 1.0
+
  * @Description: 商品订单
  */
 @TableName(value = "product_order")

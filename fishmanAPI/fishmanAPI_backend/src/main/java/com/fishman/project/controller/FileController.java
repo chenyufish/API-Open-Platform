@@ -1,17 +1,18 @@
 package com.fishman.project.controller;
 
 import cn.hutool.core.io.FileUtil;
-import com.qimu.qiapibackend.common.BaseResponse;
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.common.ResultUtils;
-import com.qimu.qiapibackend.constant.FileConstant;
-import com.qimu.qiapibackend.manager.CosManager;
-import com.qimu.qiapibackend.model.enums.FileUploadBizEnum;
-import com.qimu.qiapibackend.model.enums.ImageStatusEnum;
-import com.qimu.qiapibackend.model.file.UploadFileRequest;
-import com.qimu.qiapibackend.model.vo.ImageVo;
-import com.qimu.qiapibackend.model.vo.UserVO;
-import com.qimu.qiapibackend.service.UserService;
+
+import com.fishman.project.common.BaseResponse;
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.common.ResultUtils;
+import com.fishman.project.constant.FileConstant;
+import com.fishman.project.manager.CosManager;
+import com.fishman.project.model.enums.FileUploadBizEnum;
+import com.fishman.project.model.enums.ImageStatusEnum;
+import com.fishman.project.model.file.UploadFileRequest;
+import com.fishman.project.model.vo.ImageVo;
+import com.fishman.project.model.vo.UserVO;
+import com.fishman.project.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.web.bind.annotation.PostMapping;

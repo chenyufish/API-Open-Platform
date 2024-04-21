@@ -1,6 +1,7 @@
 package com.fishman.project.model.dto.productorder;
 
-import com.qimu.qiapibackend.common.PageRequest;
+
+import com.fishman.project.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -52,4 +53,5 @@ public class ProductOrderQueryRequest extends PageRequest implements Serializabl
      * 增加积分个数
      */
     private Integer addPoints;
+
 }

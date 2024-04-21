@@ -2,18 +2,17 @@ package com.fishman.project.service.impl;
 
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.fishman.project.mapper.PaymentInfoMapper;
+import com.fishman.project.model.entity.PaymentInfo;
+import com.fishman.project.model.vo.PaymentInfoVo;
+import com.fishman.project.service.PaymentInfoService;
 import com.github.binarywang.wxpay.bean.result.WxPayOrderQueryV3Result;
-import com.qimu.qiapibackend.mapper.PaymentInfoMapper;
-import com.qimu.qiapibackend.model.entity.PaymentInfo;
-import com.qimu.qiapibackend.model.vo.PaymentInfoVo;
-import com.qimu.qiapibackend.service.PaymentInfoService;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/23 08:16:24
- * @Version: 1.0
+
  * @Description: 支付信息服务impl
  */
 @Service

@@ -8,10 +8,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.plugins.pagination.PageDTO;
 
 import com.fishman.fishmanAPI_common.model.enums.UserAccountStatusEnum;
-import com.fishman.fishmanAPI_common.model.vo.UserVO;
+import com.fishman.project.model.vo.UserVO;
 import com.fishman.project.annotation.AuthCheck;
-import com.fishman.project.common.DeleteRequest;
-import com.fishman.project.common.IdRequest;
+import com.fishman.project.common.*;
+import com.fishman.project.config.EmailConfig;
 import com.fishman.project.exception.BusinessException;
 import com.fishman.project.model.dto.user.*;
 import com.fishman.project.model.entity.User;
@@ -34,6 +34,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+
+import static com.fishman.project.constant.EmailConstant.*;
+import static com.fishman.project.constant.UserConstant.ADMIN_ROLE;
+import static com.fishman.project.utils.EmailUtil.buildEmailContent;
 
 
 /**

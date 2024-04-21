@@ -10,9 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/24 11:21:11
- * @Version: 1.0
+
  * @Description: 付款信息
  */
 @TableName(value = "payment_info")

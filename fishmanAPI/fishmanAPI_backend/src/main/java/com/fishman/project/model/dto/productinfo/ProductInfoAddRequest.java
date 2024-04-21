@@ -6,9 +6,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/25 03:08:47
- * @Version: 1.0
+
  * @Description: 创建请求
  */
 @Data

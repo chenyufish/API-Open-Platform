@@ -1,7 +1,8 @@
 package com.fishman.project.utils;
 
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.exception.BusinessException;
+
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -12,9 +13,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 
 /**
- * @Author: QiMu
- * @Date: 2023/09/11 11:11:26
- * @Version: 1.0
+
  * @Description: Redisson Lock Utils
  */
 @Slf4j

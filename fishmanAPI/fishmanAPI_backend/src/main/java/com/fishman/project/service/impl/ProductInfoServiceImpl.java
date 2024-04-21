@@ -1,20 +1,18 @@
 package com.fishman.project.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.mapper.ProductInfoMapper;
-import com.qimu.qiapibackend.model.entity.ProductInfo;
-import com.qimu.qiapibackend.service.ProductInfoService;
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.mapper.ProductInfoMapper;
+import com.fishman.project.model.entity.ProductInfo;
+import com.fishman.project.service.ProductInfoService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/25 02:56:44
- * @Version: 1.0
+
  * @Description: 产品信息服务impl
  */
 @Service

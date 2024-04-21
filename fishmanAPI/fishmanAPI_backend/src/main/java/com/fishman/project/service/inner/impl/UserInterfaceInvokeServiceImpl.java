@@ -2,23 +2,22 @@ package com.fishman.project.service.inner.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.qimu.qiapibackend.common.ErrorCode;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.mapper.UserInterfaceInvokeMapper;
-import com.qimu.qiapibackend.service.InterfaceInfoService;
-import com.qimu.qiapibackend.service.UserService;
-import com.qimu.qiapicommon.model.entity.UserInterfaceInvoke;
-import com.qimu.qiapicommon.service.inner.InnerUserInterfaceInvokeService;
+import com.fishman.fishmanAPI_common.service.inner.InnerUserInterfaceInvokeService;
+import com.fishman.project.common.ErrorCode;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.mapper.UserInterfaceInvokeMapper;
+import com.fishman.project.model.entity.UserInterfaceInvoke;
+import com.fishman.project.service.InterfaceInfoService;
+import com.fishman.project.service.UserService;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
 /**
- * @Author: QiMu
- * @Date: 2023/09/04 11:30:02
- * @Version: 1.0
+
  * @Description: 用户界面调用服务impl
  */
 @DubboService

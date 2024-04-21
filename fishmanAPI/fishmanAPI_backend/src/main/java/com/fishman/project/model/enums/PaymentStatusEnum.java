@@ -5,9 +5,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/24 10:12:14
- * @Version: 1.0
  * @Description: 付款状态枚举
  */
 public enum PaymentStatusEnum {

@@ -1,15 +1,13 @@
 package com.fishman.project.model.dto.productinfo;
 
-import com.qimu.qiapibackend.common.PageRequest;
+
+import com.fishman.project.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 
 /**
- * @Author: QiMu
- * @Date: 2023/09/04 11:33:48
- * @Version: 1.0
  * @Description: 产品信息搜索文本请求
  */
 @Data

@@ -2,19 +2,20 @@ package com.fishman.project.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.qimu.qiapibackend.annotation.AuthCheck;
-import com.qimu.qiapibackend.common.*;
-import com.qimu.qiapibackend.constant.CommonConstant;
-import com.qimu.qiapibackend.exception.BusinessException;
-import com.qimu.qiapibackend.model.dto.productinfo.ProductInfoAddRequest;
-import com.qimu.qiapibackend.model.dto.productinfo.ProductInfoQueryRequest;
-import com.qimu.qiapibackend.model.dto.productinfo.ProductInfoSearchTextRequest;
-import com.qimu.qiapibackend.model.dto.productinfo.ProductInfoUpdateRequest;
-import com.qimu.qiapibackend.model.entity.ProductInfo;
-import com.qimu.qiapibackend.model.enums.ProductInfoStatusEnum;
-import com.qimu.qiapibackend.model.vo.UserVO;
-import com.qimu.qiapibackend.service.ProductInfoService;
-import com.qimu.qiapibackend.service.UserService;
+
+import com.fishman.project.annotation.AuthCheck;
+import com.fishman.project.common.*;
+import com.fishman.project.constant.CommonConstant;
+import com.fishman.project.exception.BusinessException;
+import com.fishman.project.model.dto.productinfo.ProductInfoAddRequest;
+import com.fishman.project.model.dto.productinfo.ProductInfoQueryRequest;
+import com.fishman.project.model.dto.productinfo.ProductInfoSearchTextRequest;
+import com.fishman.project.model.dto.productinfo.ProductInfoUpdateRequest;
+import com.fishman.project.model.entity.ProductInfo;
+import com.fishman.project.model.enums.ProductInfoStatusEnum;
+import com.fishman.project.model.vo.UserVO;
+import com.fishman.project.service.ProductInfoService;
+import com.fishman.project.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -27,7 +28,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.qimu.qiapibackend.constant.UserConstant.ADMIN_ROLE;
+import static com.fishman.project.constant.UserConstant.ADMIN_ROLE;
+
 
 /**
  * 帖子接口

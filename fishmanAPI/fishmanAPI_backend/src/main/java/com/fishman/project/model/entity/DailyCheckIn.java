@@ -10,9 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/31 11:48:45
- * @Version: 1.0
+
  * @Description: 每日签到表
  */
 @TableName(value = "daily_check_in")
