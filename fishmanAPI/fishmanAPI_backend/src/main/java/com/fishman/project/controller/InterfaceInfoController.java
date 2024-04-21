@@ -40,7 +40,7 @@ import static com.fishman.project.constant.UserConstant.ADMIN_ROLE;
 
 
 /**
- * 帖子接口
+ * 接口
  *
  * @author qimu
  */

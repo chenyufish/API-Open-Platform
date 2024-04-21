@@ -5,9 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/24 10:02:46
- * @Version: 1.0
+
  * @Description: wx支付帐户配置
  */
 @Data

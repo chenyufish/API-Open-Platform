@@ -1,21 +1,21 @@
 
 ”
-java:S1192ü"PDefine a constant instead of duplicating this literal "è´¦å·å·²å°ç¦" 3 times.(Ñ†ªš8‘¸·ıï1J$8d920cb5-b274-4b10-a069-361705c7c628
+java:S1192ü"PDefine a constant instead of duplicating this literal "è´¦å·å·²å°ç¦" 3 times.(Ñ†ªš8‘¸·ıï1J$384accf8-2770-4335-8e9d-55362766d876
 ¬
-java:S1192£"cDefine a constant instead of duplicating this literal "éªŒè¯ç å·²è¿‡æœŸ,è¯·é‡æ–°è·å–" 4 times.(éÀ—õüÿÿÿÿ8‘¸·ıï1J$17343219-ace4-47f6-aacf-6d6bb5dc7b4d
+java:S1192£"cDefine a constant instead of duplicating this literal "éªŒè¯ç å·²è¿‡æœŸ,è¯·é‡æ–°è·å–" 4 times.(éÀ—õüÿÿÿÿ8‘¸·ıï1J$94f79a04-01cd-4255-aaf9-df33608b49fa
 «
-java:S1192"bDefine a constant instead of duplicating this literal "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$" 4 times.(™ùà‚şÿÿÿÿ8‘¸·ıï1J$b3d6fc17-92ce-46eb-92bb-537246ff4d20
+java:S1192"bDefine a constant instead of duplicating this literal "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$" 4 times.(™ùà‚şÿÿÿÿ8‘¸·ıï1J$419a558b-2226-46fe-b57c-2746094d5bc4
 •
-java:S1192S"MDefine a constant instead of duplicating this literal "[0-9a-zA-Z]+" 3 times.(™š¶™ùÿÿÿÿ8‘¸·ıï1J$3a2665cd-8b86-4298-b6c4-a0065d09f1ff
+java:S1192S"MDefine a constant instead of duplicating this literal "[0-9a-zA-Z]+" 3 times.(™š¶™ùÿÿÿÿ8‘¸·ıï1J$35db28bd-e4b0-4cd8-84bb-a5272169058a
 ¥
-java:S1192Ÿ"\Define a constant instead of duplicating this literal "ä¸åˆæ³•çš„é‚®ç®±åœ°å€ï¼" 4 times.(«¥Æ«ûÿÿÿÿ8‘¸·ıï1J$e3eb5156-ec03-4c61-8496-ab089eedfdcc
+java:S1192Ÿ"\Define a constant instead of duplicating this literal "ä¸åˆæ³•çš„é‚®ç®±åœ°å€ï¼" 4 times.(«¥Æ«ûÿÿÿÿ8‘¸·ıï1J$a91127d0-8935-44b9-9eed-800b52572197
 
-java:S1192_"LDefine a constant instead of duplicating this literal "userAccount" 4 times.(äºùƒ8‘¸·ıï1J$e5506a88-a3e1-4dfc-b11e-d170095366ee
+java:S1192_"LDefine a constant instead of duplicating this literal "userAccount" 4 times.(äºùƒ8‘¸·ıï1J$aa803bb6-ba5c-42b2-9491-ecd8ba7e5720
 Ÿ
-java:S1192§"VDefine a constant instead of duplicating this literal "éªŒè¯ç è¾“å…¥æœ‰è¯¯" 4 times.(ÉÚ¶Ìüÿÿÿÿ8’¸·ıï1J$9b9fa6de-70f5-477b-a120-0af2b2b07ae8
+java:S1192§"VDefine a constant instead of duplicating this literal "éªŒè¯ç è¾“å…¥æœ‰è¯¯" 4 times.(ÉÚ¶Ìüÿÿÿÿ8’¸·ıï1J$f9aee6e8-f602-42ba-a5f6-da1eb627c52e
 š
-java:S3776="RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Â­´ˆşÿÿÿÿ8ª¸·ıï1J$d3a181d8-2601-415a-89a5-6d163a249897
+java:S3776="RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Â­´ˆşÿÿÿÿ8ª¸·ıï1J$b071463c-b537-4c1e-b87b-d0edeeb0d03f
 –
-java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(šÅÃ›8¯¸·ıï1J$242683ca-7682-4535-8efc-662ed2f64c90
+java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(šÅÃ›8¯¸·ıï1J$2dc77b21-a6f6-415a-b8bb-60089d670784
 a
-java:S2119 "Save and re-use this "Random".(¼İÅf8Ë¸·ıï1J$eb14d774-1a70-4b1a-9204-439223a34a6a
+java:S2119 "Save and re-use this "Random".(¼İÅf8Ë¸·ıï1J$88c1651b-a55c-4af4-a7fc-2821a88ad19f

@@ -6,9 +6,10 @@ import com.fishman.fishmanAPI_common.model.dto.RequestParamsField;
 import com.fishman.fishmanAPI_common.model.entity.InterfaceInfo;
 import com.fishman.fishmanAPI_common.model.enums.InterfaceStatusEnum;
 import com.fishman.fishmanAPI_common.model.vo.UserVO;
-import com.fishman.fishmanAPI_common.service.InnerInterfaceInfoService;
-import com.fishman.fishmanAPI_common.service.InnerUserInterfaceInvokeService;
-import com.fishman.fishmanAPI_common.service.InnerUserService;
+
+import com.fishman.fishmanAPI_common.service.inner.InnerInterfaceInfoService;
+import com.fishman.fishmanAPI_common.service.inner.InnerUserInterfaceInvokeService;
+import com.fishman.fishmanAPI_common.service.inner.InnerUserService;
 import com.fishman.fishmanapi_gateway.exception.BusinessException;
 import com.fishman.fishmanapi_gateway.utils.RedissonLockUtil;
 import com.google.gson.Gson;
@@ -41,6 +42,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import static com.fishman.fishmanAPI_common.model.enums.UserAccountStatusEnum.BAN;
 import static com.fishman.fishmanapi_gateway.CacheBodyGatewayFilter.CACHE_REQUEST_BODY_OBJECT_KEY;
 import static com.fishman.fishmanapi_gateway.utils.NetUtils.getIp;
+import static icu.qimuu.qiapisdk.utils.SignUtils.getSign;
 
 
 @Component

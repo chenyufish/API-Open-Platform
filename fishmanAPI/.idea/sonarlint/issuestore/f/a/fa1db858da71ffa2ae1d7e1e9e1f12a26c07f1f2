@@ -1,0 +1,14 @@
+
+l
+java:S1066 "/Merge this if statement with the enclosing one.(ã–ÎâJ$99342786-f336-48d5-885d-a275aa4956ef
+q
+java:S1066¬"/Merge this if statement with the enclosing one.(½Øþ­ýÿÿÿÿJ$5b02bfa4-40c4-4678-9001-dbff6c920cb5
+†
+java:S11246"EReorder the modifiers to comply with the Java Language Specification.(ô·©ËûÿÿÿÿJ$51a02c2d-71bb-46c3-8f0f-69a5f4f11d45
+Ž
+java:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 44 to the 15 allowed.(Å¾¡½J$04eb074b-9385-470b-86e1-608905a1ae01
+w	java:S125\"<This block of commented-out lines of code should be removed.(®Öœ±J$f42dac29-80a0-4626-95ea-434486db9cd0
+t
+java:S10686"3Remove this unused "WHITE_HOST_LIST" private field.(ô·©ËûÿÿÿÿJ$5f23c115-6802-4ad9-812d-227362423542
+‚
+java:S6541Y"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 83 to 64, Complexity from 24 to 14, Nesting Level from 6 to 2, Number of Variables from 22 to 6.(Å¾¡½J$d6d3ea22-a878-4772-8b92-e1a0e0eb0beb

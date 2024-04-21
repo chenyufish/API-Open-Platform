@@ -14,9 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.Resource;
 
 /**
- * @Author: QiMu
- * @Date: 2023/08/24 10:02:52
- * @Version: 1.0
+
  * @Description: 支付配置
  */
 @Configuration

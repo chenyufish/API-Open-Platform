@@ -2,7 +2,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: qi-api-backend
+    name: fishmanAPI_backend
   # DataSource Config todo 修改为自己的数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -25,7 +25,7 @@ spring:
   mail:
     host: smtp.163.com
     username: cy13692810010@163.com
-    password: 030610chenyu
+    password: 7894561230chenyu
     emailFrom: cy13692810010@163.com
     properties:
       mail:
@@ -50,6 +50,19 @@ mybatis-plus:
       logic-delete-field: isDelete # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
       logic-delete-value: 1 # 逻辑已删除值(默认为 1)
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+dubbo:
+  application:
+    enable-file-cache: false
+    name: dubbo-springboot-demo-provider
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    # todo 线上修改为服务器内网地址，参考nacos启动后的链接
+    address: nacos://localhost:8848
+
 
 # Qi-API-SDK 配置，如需使用自己的网关host需修改
 qi:
@@ -88,14 +101,3 @@ alipay:
   private-key: xxxxxxxxxx
   ali-pay-public-key: xxxxxxxxxxxxxxxx
 
-dubbo:
-  application:
-    enable-file-cache: false
-    name: dubbo-springboot-demo-provider
-  protocol:
-    name: dubbo
-    port: -1
-  registry:
-    id: nacos-registry
-    # todo 线上修改为服务器内网地址，参考nacos启动后的链接
-    address: nacos://localhost:8848
